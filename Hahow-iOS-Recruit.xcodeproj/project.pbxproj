@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9327688AAC00FDAF23 /* LaunchViewController.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
-		65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1EA270C301A00DDEADC /* ViewController.swift */; };
-		65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EC270C301A00DDEADC /* Main.storyboard */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
 		65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */; };
 		65E9E1FE270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1FD270C301B00DDEADC /* Hahow_iOS_RecruitTests.swift */; };
@@ -36,11 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49112E9327688AAC00FDAF23 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65E9E1EA270C301A00DDEADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65E9E1ED270C301A00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E9E1EF270C301B00DDEADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E9E1F2270C301B00DDEADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E9E1F4270C301B00DDEADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49112E9527688DA400FDAF23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49112E9627688DAA00FDAF23 /* Launch */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49112E9627688DAA00FDAF23 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				49112E9327688AAC00FDAF23 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		65E9E1DA270C301A00DDEADC = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +115,10 @@
 		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				49112E9527688DA400FDAF23 /* Views */,
 				65E9E216270C307D00DDEADC /* data.json */,
 				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
 				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
-				65E9E1EA270C301A00DDEADC /* ViewController.swift */,
-				65E9E1EC270C301A00DDEADC /* Main.storyboard */,
 				65E9E1EF270C301B00DDEADC /* Assets.xcassets */,
 				65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */,
 				65E9E1F4270C301B00DDEADC /* Info.plist */,
@@ -236,7 +249,6 @@
 			files = (
 				65E9E1F3270C301B00DDEADC /* LaunchScreen.storyboard in Resources */,
 				65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */,
-				65E9E1EE270C301A00DDEADC /* Main.storyboard in Resources */,
 				65E9E217270C307D00DDEADC /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E9E1EB270C301A00DDEADC /* ViewController.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
+				49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		65E9E1EC270C301A00DDEADC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65E9E1ED270C301A00DDEADC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65E9E1F1270C301B00DDEADC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,11 +445,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.2021121401;
 				INFOPLIST_FILE = "Hahow-iOS-Recruit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-Recruit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -459,11 +465,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.2021121401;
 				INFOPLIST_FILE = "Hahow-iOS-Recruit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "in.hahow.Hahow-iOS-Recruit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
