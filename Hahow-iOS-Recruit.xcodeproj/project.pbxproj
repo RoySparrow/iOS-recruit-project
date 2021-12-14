@@ -16,6 +16,9 @@
 		49112EA82768964A00FDAF23 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA72768964A00FDAF23 /* RxSwift */; };
 		49112EAA276896EC00FDAF23 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EA9276896EC00FDAF23 /* LaunchViewModel.swift */; };
 		49112EAD276897DD00FDAF23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EAC276897DD00FDAF23 /* MainViewController.swift */; };
+		49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EAF27689E3F00FDAF23 /* CourseModels.swift */; };
+		49112EB327689F9600FDAF23 /* DataLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */; };
+		49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		49112E9E276891AC00FDAF23 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		49112EA9276896EC00FDAF23 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		49112EAC276897DD00FDAF23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		49112EAF27689E3F00FDAF23 /* CourseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModels.swift; sourceTree = "<group>"; };
+		49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderProtocol.swift; sourceTree = "<group>"; };
+		49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataLoader.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,24 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		49112EAE27689D9200FDAF23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49112EAF27689E3F00FDAF23 /* CourseModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49112EB127689F4700FDAF23 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */,
+				49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */,
+				49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		65E9E1DA270C301A00DDEADC = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +174,10 @@
 		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				49112EAE27689D9200FDAF23 /* Models */,
 				49112E9527688DA400FDAF23 /* Views */,
+				49112EB127689F4700FDAF23 /* Helper */,
 				65E9E216270C307D00DDEADC /* data.json */,
-				49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */,
 				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
 				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
 				65E9E1EF270C301B00DDEADC /* Assets.xcassets */,
@@ -320,8 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49112EB327689F9600FDAF23 /* DataLoaderProtocol.swift in Sources */,
 				49112EAD276897DD00FDAF23 /* MainViewController.swift in Sources */,
 				49112E9F276891AC00FDAF23 /* BaseViewController.swift in Sources */,
+				49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */,
+				49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
 				49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */,
