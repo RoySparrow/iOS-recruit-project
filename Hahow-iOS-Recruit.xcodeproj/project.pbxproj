@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9327688AAC00FDAF23 /* LaunchViewController.swift */; };
+		49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		49112E9327688AAC00FDAF23 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulFunctions.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				49112E9527688DA400FDAF23 /* Views */,
 				65E9E216270C307D00DDEADC /* data.json */,
+				49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */,
 				65E9E1E6270C301A00DDEADC /* AppDelegate.swift */,
 				65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */,
 				65E9E1EF270C301B00DDEADC /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 			files = (
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
+				49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */,
 				49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
