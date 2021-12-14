@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9327688AAC00FDAF23 /* LaunchViewController.swift */; };
 		49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */; };
+		49112E9C276890AF00FDAF23 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49112E9B276890AF00FDAF23 /* SnapKit */; };
+		49112E9F276891AC00FDAF23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112E9E276891AC00FDAF23 /* BaseViewController.swift */; };
+		49112EA42768964A00FDAF23 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA32768964A00FDAF23 /* RxRelay */; };
+		49112EA62768964A00FDAF23 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA52768964A00FDAF23 /* RxCocoa */; };
+		49112EA82768964A00FDAF23 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA72768964A00FDAF23 /* RxSwift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -38,6 +43,7 @@
 /* Begin PBXFileReference section */
 		49112E9327688AAC00FDAF23 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulFunctions.swift; sourceTree = "<group>"; };
+		49112E9E276891AC00FDAF23 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49112EA62768964A00FDAF23 /* RxCocoa in Frameworks */,
+				49112EA42768964A00FDAF23 /* RxRelay in Frameworks */,
+				49112EA82768964A00FDAF23 /* RxSwift in Frameworks */,
+				49112E9C276890AF00FDAF23 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 		49112E9527688DA400FDAF23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49112E9D2768919E00FDAF23 /* Base */,
 				49112E9627688DAA00FDAF23 /* Launch */,
 			);
 			path = Views;
@@ -92,6 +103,14 @@
 				49112E9327688AAC00FDAF23 /* LaunchViewController.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		49112E9D2768919E00FDAF23 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				49112E9E276891AC00FDAF23 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		65E9E1DA270C301A00DDEADC = {
@@ -163,6 +182,12 @@
 			dependencies = (
 			);
 			name = "Hahow-iOS-Recruit";
+			packageProductDependencies = (
+				49112E9B276890AF00FDAF23 /* SnapKit */,
+				49112EA32768964A00FDAF23 /* RxRelay */,
+				49112EA52768964A00FDAF23 /* RxCocoa */,
+				49112EA72768964A00FDAF23 /* RxSwift */,
+			);
 			productName = "Hahow-iOS-Recruit";
 			productReference = 65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +259,10 @@
 				Base,
 			);
 			mainGroup = 65E9E1DA270C301A00DDEADC;
+			packageReferences = (
+				49112E9A276890AF00FDAF23 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 65E9E1E4270C301A00DDEADC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49112E9F276891AC00FDAF23 /* BaseViewController.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
 				49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */,
@@ -605,6 +635,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49112E9A276890AF00FDAF23 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49112E9B276890AF00FDAF23 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49112E9A276890AF00FDAF23 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		49112EA32768964A00FDAF23 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		49112EA52768964A00FDAF23 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		49112EA72768964A00FDAF23 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65E9E1DB270C301A00DDEADC /* Project object */;
 }
