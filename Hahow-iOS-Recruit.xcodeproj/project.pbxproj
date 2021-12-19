@@ -15,10 +15,23 @@
 		49112EA62768964A00FDAF23 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA52768964A00FDAF23 /* RxCocoa */; };
 		49112EA82768964A00FDAF23 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 49112EA72768964A00FDAF23 /* RxSwift */; };
 		49112EAA276896EC00FDAF23 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EA9276896EC00FDAF23 /* LaunchViewModel.swift */; };
-		49112EAD276897DD00FDAF23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EAC276897DD00FDAF23 /* MainViewController.swift */; };
 		49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EAF27689E3F00FDAF23 /* CourseModels.swift */; };
 		49112EB327689F9600FDAF23 /* DataLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */; };
 		49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */; };
+		4926DD98276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DD97276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift */; };
+		4926DD9A276EED8E001D93A7 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DD99276EED8E001D93A7 /* CourseTableViewCell.swift */; };
+		4926DD9C276EEDED001D93A7 /* CourseFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DD9B276EEDED001D93A7 /* CourseFirstTableViewCell.swift */; };
+		4926DDA0276EEEC1001D93A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4926DD9F276EEEC1001D93A7 /* Kingfisher */; };
+		4926DDA2276EEEDF001D93A7 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDA1276EEEDF001D93A7 /* UIImageViewExtensions.swift */; };
+		4926DDA4276EF039001D93A7 /* LayoutTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDA3276EF039001D93A7 /* LayoutTheme.swift */; };
+		4926DDA6276EF444001D93A7 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDA5276EF444001D93A7 /* UITableViewCellExtensions.swift */; };
+		4926DDA8276EF59B001D93A7 /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDA7276EF59B001D93A7 /* CourseListViewModel.swift */; };
+		4926DDAA276EF69D001D93A7 /* CourseListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDA9276EF69D001D93A7 /* CourseListViewModelProtocol.swift */; };
+		4926DDAC276EFBDC001D93A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDAB276EFBDC001D93A7 /* UIViewExtensions.swift */; };
+		4926DDAE276EFDF8001D93A7 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDAD276EFDF8001D93A7 /* ArrayExtensions.swift */; };
+		4926DDB0276EFF58001D93A7 /* CourseListCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */; };
+		4926DDB2276F0174001D93A7 /* CourseListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */; };
+		4926DDB7276F1581001D93A7 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -50,10 +63,22 @@
 		49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulFunctions.swift; sourceTree = "<group>"; };
 		49112E9E276891AC00FDAF23 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		49112EA9276896EC00FDAF23 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
-		49112EAC276897DD00FDAF23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		49112EAF27689E3F00FDAF23 /* CourseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModels.swift; sourceTree = "<group>"; };
 		49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderProtocol.swift; sourceTree = "<group>"; };
 		49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataLoader.swift; sourceTree = "<group>"; };
+		4926DD97276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewControllerPhoneVer.swift; sourceTree = "<group>"; };
+		4926DD99276EED8E001D93A7 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		4926DD9B276EEDED001D93A7 /* CourseFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseFirstTableViewCell.swift; sourceTree = "<group>"; };
+		4926DDA1276EEEDF001D93A7 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		4926DDA3276EF039001D93A7 /* LayoutTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTheme.swift; sourceTree = "<group>"; };
+		4926DDA5276EF444001D93A7 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		4926DDA7276EF59B001D93A7 /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		4926DDA9276EF69D001D93A7 /* CourseListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModelProtocol.swift; sourceTree = "<group>"; };
+		4926DDAB276EFBDC001D93A7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		4926DDAD276EFDF8001D93A7 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListCellModifier.swift; sourceTree = "<group>"; };
+		4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListHeaderView.swift; sourceTree = "<group>"; };
+		4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +103,7 @@
 				49112EA42768964A00FDAF23 /* RxRelay in Frameworks */,
 				49112EA82768964A00FDAF23 /* RxSwift in Frameworks */,
 				49112E9C276890AF00FDAF23 /* SnapKit in Frameworks */,
+				4926DDA0276EEEC1001D93A7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +129,7 @@
 			children = (
 				49112E9D2768919E00FDAF23 /* Base */,
 				49112E9627688DAA00FDAF23 /* Launch */,
-				49112EAB276897CB00FDAF23 /* Main */,
+				4926DD96276E28DA001D93A7 /* CourseList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,14 +151,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		49112EAB276897CB00FDAF23 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				49112EAC276897DD00FDAF23 /* MainViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		49112EAE27689D9200FDAF23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +165,43 @@
 				49112EB227689F9600FDAF23 /* DataLoaderProtocol.swift */,
 				49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */,
 				49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */,
+				4926DDA3276EF039001D93A7 /* LayoutTheme.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		4926DD96276E28DA001D93A7 /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				4926DDB5276F14C4001D93A7 /* iPhoneVer */,
+				4926DDA9276EF69D001D93A7 /* CourseListViewModelProtocol.swift */,
+				4926DDA7276EF59B001D93A7 /* CourseListViewModel.swift */,
+				4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */,
+				4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		4926DD9D276EEE38001D93A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4926DDAB276EFBDC001D93A7 /* UIViewExtensions.swift */,
+				4926DDA1276EEEDF001D93A7 /* UIImageViewExtensions.swift */,
+				4926DDA5276EF444001D93A7 /* UITableViewCellExtensions.swift */,
+				4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */,
+				4926DDAD276EFDF8001D93A7 /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4926DDB5276F14C4001D93A7 /* iPhoneVer */ = {
+			isa = PBXGroup;
+			children = (
+				4926DD97276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift */,
+				4926DD9B276EEDED001D93A7 /* CourseFirstTableViewCell.swift */,
+				4926DD99276EED8E001D93A7 /* CourseTableViewCell.swift */,
+			);
+			path = iPhoneVer;
 			sourceTree = "<group>";
 		};
 		65E9E1DA270C301A00DDEADC = {
@@ -174,6 +227,7 @@
 		65E9E1E5270C301A00DDEADC /* Hahow-iOS-Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				4926DD9D276EEE38001D93A7 /* Extensions */,
 				49112EAE27689D9200FDAF23 /* Models */,
 				49112E9527688DA400FDAF23 /* Views */,
 				49112EB127689F4700FDAF23 /* Helper */,
@@ -226,6 +280,7 @@
 				49112EA32768964A00FDAF23 /* RxRelay */,
 				49112EA52768964A00FDAF23 /* RxCocoa */,
 				49112EA72768964A00FDAF23 /* RxSwift */,
+				4926DD9F276EEEC1001D93A7 /* Kingfisher */,
 			);
 			productName = "Hahow-iOS-Recruit";
 			productReference = 65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */;
@@ -301,6 +356,7 @@
 			packageReferences = (
 				49112E9A276890AF00FDAF23 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4926DD9E276EEEC1001D93A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 65E9E1E4270C301A00DDEADC /* Products */;
 			projectDirPath = "";
@@ -345,13 +401,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4926DDB2276F0174001D93A7 /* CourseListHeaderView.swift in Sources */,
+				4926DDB7276F1581001D93A7 /* UIDeviceExtensions.swift in Sources */,
+				4926DDA2276EEEDF001D93A7 /* UIImageViewExtensions.swift in Sources */,
+				4926DDA8276EF59B001D93A7 /* CourseListViewModel.swift in Sources */,
 				49112EB327689F9600FDAF23 /* DataLoaderProtocol.swift in Sources */,
-				49112EAD276897DD00FDAF23 /* MainViewController.swift in Sources */,
+				4926DDB0276EFF58001D93A7 /* CourseListCellModifier.swift in Sources */,
+				4926DDAA276EF69D001D93A7 /* CourseListViewModelProtocol.swift in Sources */,
 				49112E9F276891AC00FDAF23 /* BaseViewController.swift in Sources */,
+				4926DD9C276EEDED001D93A7 /* CourseFirstTableViewCell.swift in Sources */,
 				49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */,
 				49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */,
+				4926DD98276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift in Sources */,
+				4926DDAC276EFBDC001D93A7 /* UIViewExtensions.swift in Sources */,
+				4926DDAE276EFDF8001D93A7 /* ArrayExtensions.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
+				4926DD9A276EED8E001D93A7 /* CourseTableViewCell.swift in Sources */,
+				4926DDA6276EF444001D93A7 /* UITableViewCellExtensions.swift in Sources */,
+				4926DDA4276EF039001D93A7 /* LayoutTheme.swift in Sources */,
 				49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */,
 				49112E9427688AAC00FDAF23 /* LaunchViewController.swift in Sources */,
 				49112EAA276896EC00FDAF23 /* LaunchViewModel.swift in Sources */,
@@ -697,6 +765,14 @@
 				minimumVersion = 6.2.0;
 			};
 		};
+		4926DD9E276EEEC1001D93A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -719,6 +795,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 49112EA22768964A00FDAF23 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		4926DD9F276EEEC1001D93A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4926DD9E276EEEC1001D93A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
