@@ -21,6 +21,12 @@ class CourseListCellModifier {
         cell.teacherNameLabel.text = model.name
     }
     
+    func modifyCollectionViewCell(_ cell: CourseCollectionViewCell, with model: CourseModel) {
+        cell.coverImageView.setImageFromURL(model.coverImageUrl)
+        cell.titleLabel.text = model.title
+        cell.teacherNameLabel.text = model.name
+    }
+    
     deinit {
         print("deinit.")
     }

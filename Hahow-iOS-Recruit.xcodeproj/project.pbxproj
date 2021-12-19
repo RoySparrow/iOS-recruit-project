@@ -32,6 +32,10 @@
 		4926DDB0276EFF58001D93A7 /* CourseListCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */; };
 		4926DDB2276F0174001D93A7 /* CourseListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */; };
 		4926DDB7276F1581001D93A7 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */; };
+		4926DDBA276F1DDA001D93A7 /* CourseListViewControllerPadVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDB9276F1DDA001D93A7 /* CourseListViewControllerPadVer.swift */; };
+		4926DDBC276F1ED3001D93A7 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDBB276F1ED3001D93A7 /* CourseCollectionViewCell.swift */; };
+		4926DDC0276F2AB6001D93A7 /* CourseHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */; };
+		4926DDC2276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -79,6 +83,10 @@
 		4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListCellModifier.swift; sourceTree = "<group>"; };
 		4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListHeaderView.swift; sourceTree = "<group>"; };
 		4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
+		4926DDB9276F1DDA001D93A7 /* CourseListViewControllerPadVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewControllerPadVer.swift; sourceTree = "<group>"; };
+		4926DDBB276F1ED3001D93A7 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableViewExtensions.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,10 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				4926DDB5276F14C4001D93A7 /* iPhoneVer */,
+				4926DDB8276F1DA7001D93A7 /* iPadVer */,
 				4926DDA9276EF69D001D93A7 /* CourseListViewModelProtocol.swift */,
 				4926DDA7276EF59B001D93A7 /* CourseListViewModel.swift */,
 				4926DDAF276EFF58001D93A7 /* CourseListCellModifier.swift */,
-				4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */,
 			);
 			path = CourseList;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 				4926DDAB276EFBDC001D93A7 /* UIViewExtensions.swift */,
 				4926DDA1276EEEDF001D93A7 /* UIImageViewExtensions.swift */,
 				4926DDA5276EF444001D93A7 /* UITableViewCellExtensions.swift */,
+				4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */,
 				4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */,
 				4926DDAD276EFDF8001D93A7 /* ArrayExtensions.swift */,
 			);
@@ -200,8 +209,19 @@
 				4926DD97276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift */,
 				4926DD9B276EEDED001D93A7 /* CourseFirstTableViewCell.swift */,
 				4926DD99276EED8E001D93A7 /* CourseTableViewCell.swift */,
+				4926DDB1276F0174001D93A7 /* CourseListHeaderView.swift */,
 			);
 			path = iPhoneVer;
+			sourceTree = "<group>";
+		};
+		4926DDB8276F1DA7001D93A7 /* iPadVer */ = {
+			isa = PBXGroup;
+			children = (
+				4926DDB9276F1DDA001D93A7 /* CourseListViewControllerPadVer.swift */,
+				4926DDBB276F1ED3001D93A7 /* CourseCollectionViewCell.swift */,
+				4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */,
+			);
+			path = iPadVer;
 			sourceTree = "<group>";
 		};
 		65E9E1DA270C301A00DDEADC = {
@@ -404,11 +424,15 @@
 				4926DDB2276F0174001D93A7 /* CourseListHeaderView.swift in Sources */,
 				4926DDB7276F1581001D93A7 /* UIDeviceExtensions.swift in Sources */,
 				4926DDA2276EEEDF001D93A7 /* UIImageViewExtensions.swift in Sources */,
+				4926DDC2276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift in Sources */,
 				4926DDA8276EF59B001D93A7 /* CourseListViewModel.swift in Sources */,
+				4926DDBA276F1DDA001D93A7 /* CourseListViewControllerPadVer.swift in Sources */,
 				49112EB327689F9600FDAF23 /* DataLoaderProtocol.swift in Sources */,
 				4926DDB0276EFF58001D93A7 /* CourseListCellModifier.swift in Sources */,
+				4926DDC0276F2AB6001D93A7 /* CourseHeaderCollectionReusableView.swift in Sources */,
 				4926DDAA276EF69D001D93A7 /* CourseListViewModelProtocol.swift in Sources */,
 				49112E9F276891AC00FDAF23 /* BaseViewController.swift in Sources */,
+				4926DDBC276F1ED3001D93A7 /* CourseCollectionViewCell.swift in Sources */,
 				4926DD9C276EEDED001D93A7 /* CourseFirstTableViewCell.swift in Sources */,
 				49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */,
 				49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */,
