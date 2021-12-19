@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// 負責根據資料來設定 cell 的顯示
 class CourseListCellModifier {
     
     func modifyFirstTableViewCell(_ cell: CourseFirstTableViewCell, with model: CourseModel) {

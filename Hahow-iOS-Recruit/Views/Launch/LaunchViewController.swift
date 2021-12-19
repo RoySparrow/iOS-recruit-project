@@ -10,6 +10,7 @@ import RxSwift
 import SnapKit
 import UIKit
 
+/// 進入主頁面前的緩衝頁面
 class LaunchViewController: BaseViewController {
 
     private lazy var messageLabel: UILabel = {
@@ -20,11 +21,11 @@ class LaunchViewController: BaseViewController {
     
     private let viewDidAppearRelay: PublishRelay<Void>
     
-    private let viewModel: LaunchViewModel
+    private let viewModel: LaunchViewModelProtocol
     
     init() {
         viewDidAppearRelay = PublishRelay<Void>()
-        let bindings = LaunchViewModel.Bindings(launch: viewDidAppearRelay.asObservable())
+        let bindings = LaunchViewModelBindings(launch: viewDidAppearRelay.asObservable())
         viewModel = LaunchViewModel(bindings: bindings)
         
         super.init(nibName: nil, bundle: nil)

@@ -7,6 +7,8 @@
 
 import UIKit
 
+// 將所有的顏色、字型等資源統一管理，如果有更換整支 app 風格的需求，會比較好改
+
 extension UIColor {
     
     static let categoryTitle: UIColor = .black

@@ -5,9 +5,9 @@
 //  Created by Roy Sparrow on 2021/12/14.
 //
 
-import SnapKit
 import UIKit
 
+/// 處理共通的 VC 設定
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,6 +20,7 @@ class BaseViewController: UIViewController {
 
     func setupConstraints() {}
     
+    /// 確認是否有順利釋放
     deinit {
         print("\(self) deinit.")
     }

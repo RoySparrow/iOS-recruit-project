@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AllJSONModel: Codable {
+struct AllCategoryModel: Codable {
     
     var data: [CategoryModel] = []
 }

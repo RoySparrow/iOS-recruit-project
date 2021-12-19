@@ -10,6 +10,7 @@ import RxSwift
 import SnapKit
 import UIKit
 
+/// 課程列表 iPad 版型
 class CourseListViewControllerPadVer: BaseViewController {
 
     private lazy var collectionView: UICollectionView = {
@@ -21,6 +22,7 @@ class CourseListViewControllerPadVer: BaseViewController {
         return $0
     }(UICollectionView(frame: .zero, collectionViewLayout: flowLayout))
     
+    /// 不設定預設值，靠 delegate 去做動態調整
     private lazy var flowLayout = UICollectionViewFlowLayout()
     
     private lazy var cellModifier = CourseListCellModifier()
@@ -69,6 +71,7 @@ class CourseListViewControllerPadVer: BaseViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
 
+        // 觸發時，讓 flowLayout 重新 render
         guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
         }
@@ -99,10 +102,13 @@ extension CourseListViewControllerPadVer: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let parentWidth = collectionView.frame.width
         let parentHeight = collectionView.frame.height
+        
+        // 額外的計算是為了在分割畫面時，當可用的空間過小就只顯示一個 item 在一條 row 上
         var itemWidth = (parentWidth - contentOffset) / CGFloat(itemCountPerRow)
         itemWidth = itemWidth > minItemWidth ? itemWidth : parentWidth
         var itemHeight = parentWidth > parentHeight ? itemWidth / 5.0 : itemWidth / 3.0
         itemHeight = itemHeight > minItemHeight ? itemHeight : minItemHeight
+        
         return CGSize(width: itemWidth, height: itemHeight)
     }
 

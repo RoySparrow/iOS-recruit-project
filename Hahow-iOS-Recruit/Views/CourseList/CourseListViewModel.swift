@@ -13,6 +13,8 @@ class CourseListViewModel: CourseListViewModelProtocol {
     
     private let maxPhoneDisplayCount = 3
     
+    private let maxPadDisplayCount = 4
+    
     private let dataLoader: DataLoaderProtocol = JSONDataLoader()
     
     private let modelsRelay = BehaviorRelay<[CategoryModel]>(value: [])
@@ -31,18 +33,26 @@ class CourseListViewModel: CourseListViewModelProtocol {
             .subscribe(onNext: { [weak self] models in
                 guard let self = self else { return }
                 
-                let finalModels = UIDevice.currentType == .phone ? self.modifyModelsForPhone(origin: models) : models
+                let finalModels = self.modifyModels(origin: models)
                 self.modelsRelay.accept(finalModels)
             }).disposed(by: disposeBag)
     }
     
-    private func modifyModelsForPhone(origin: [CategoryModel]) -> [CategoryModel] {
+    private func modifyModels(origin: [CategoryModel]) -> [CategoryModel] {
+        var maxDisplayCount = 0
+        switch UIDevice.currentType {
+        case .pad:
+            maxDisplayCount = maxPadDisplayCount
+        default:
+            maxDisplayCount = maxPhoneDisplayCount
+        }
+        
         var finalModels: [CategoryModel] = []
         for i in 0..<origin.count {
             var category = origin[i]
             let courseCount = category.courses.count
-            if courseCount > maxPhoneDisplayCount {
-                category.courses.removeSubrange(maxPhoneDisplayCount..<courseCount)
+            if courseCount > maxDisplayCount {
+                category.courses.removeSubrange(maxDisplayCount..<courseCount)
             }
             finalModels.append(category)
         }

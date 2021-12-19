@@ -9,6 +9,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
+/// 負責 JSON 檔案的讀取跟快取，如果使用這個 loader 的各頁面有統一的資料處理邏輯，就做在這。反之，由各頁面的 ViewModel 自行處理
 class JSONDataLoader: DataLoaderProtocol {
     
     private let fileName = "data.json"
@@ -29,7 +30,7 @@ class JSONDataLoader: DataLoaderProtocol {
         
         do {
             let data = try Data(contentsOf: fileURL)
-            let jsonModel = try decoder.decode(AllJSONModel.self, from: data)
+            let jsonModel = try decoder.decode(AllCategoryModel.self, from: data)
             modelsRelay.accept(jsonModel.data)
         } catch {
             print("\(error)")

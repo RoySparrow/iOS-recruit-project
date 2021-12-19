@@ -10,6 +10,7 @@ import RxSwift
 import SnapKit
 import UIKit
 
+/// 課程列表 iPhone 版型
 class CourseListViewControllerPhoneVer: BaseViewController {
 
     private lazy var tableView: UITableView = {
@@ -49,10 +50,12 @@ class CourseListViewControllerPhoneVer: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// 鎖定直向
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
-
+    
+    /// 一定要是 true，才會讓 supportedInterfaceOrientations 生效
     override var shouldAutorotate: Bool {
         return true
     }

@@ -36,6 +36,7 @@
 		4926DDBC276F1ED3001D93A7 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDBB276F1ED3001D93A7 /* CourseCollectionViewCell.swift */; };
 		4926DDC0276F2AB6001D93A7 /* CourseHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */; };
 		4926DDC2276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */; };
+		4926DDC4276F6F7F001D93A7 /* LaunchViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDC3276F6F7F001D93A7 /* LaunchViewModelProtocol.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		4926DDBB276F1ED3001D93A7 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableViewExtensions.swift; sourceTree = "<group>"; };
+		4926DDC3276F6F7F001D93A7 /* LaunchViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelProtocol.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				49112E9327688AAC00FDAF23 /* LaunchViewController.swift */,
+				4926DDC3276F6F7F001D93A7 /* LaunchViewModelProtocol.swift */,
 				49112EA9276896EC00FDAF23 /* LaunchViewModel.swift */,
 			);
 			path = Launch;
@@ -442,6 +445,7 @@
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,
 				65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */,
 				4926DD9A276EED8E001D93A7 /* CourseTableViewCell.swift in Sources */,
+				4926DDC4276F6F7F001D93A7 /* LaunchViewModelProtocol.swift in Sources */,
 				4926DDA6276EF444001D93A7 /* UITableViewCellExtensions.swift in Sources */,
 				4926DDA4276EF039001D93A7 /* LayoutTheme.swift in Sources */,
 				49112E9927688FAE00FDAF23 /* HelpfulFunctions.swift in Sources */,
