@@ -9,6 +9,7 @@ import Foundation
 
 extension Array {
     
+    // 封裝判斷 index 的邏輯
     subscript (safe index: Index) -> Element? {
         return 0 <= index && index < count ? self[index] : nil
     }

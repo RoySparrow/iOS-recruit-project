@@ -9,5 +9,7 @@ import UIKit
 
 extension UIDevice {
     
-    static let currentType = UIDevice.current.userInterfaceIdiom
+    static var currentType: UIUserInterfaceIdiom {
+        return UIDevice.current.userInterfaceIdiom
+    }
 }
