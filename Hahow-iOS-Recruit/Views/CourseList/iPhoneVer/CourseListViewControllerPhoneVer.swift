@@ -90,10 +90,10 @@ class CourseListViewControllerPhoneVer: BaseViewController {
 extension CourseListViewControllerPhoneVer: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let category = dataSource[safe: section] else { return nil }
+        guard let title = dataSource[safe: section]?.category else { return nil }
         
         let headerView = CourseListHeaderView()
-        headerView.titleLabel.text = category.category
+        headerView.titleLabel.text = title.localizedString
         return headerView
     }
 }

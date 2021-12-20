@@ -37,6 +37,8 @@
 		4926DDC0276F2AB6001D93A7 /* CourseHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */; };
 		4926DDC2276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */; };
 		4926DDC4276F6F7F001D93A7 /* LaunchViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926DDC3276F6F7F001D93A7 /* LaunchViewModelProtocol.swift */; };
+		49CDD323277031F4002B78BA /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDD322277031F4002B78BA /* LocalizationHelper.swift */; };
+		49CDD32527703C34002B78BA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDD32427703C34002B78BA /* StringExtensions.swift */; };
 		65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E6270C301A00DDEADC /* AppDelegate.swift */; };
 		65E9E1E9270C301A00DDEADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */; };
 		65E9E1F0270C301B00DDEADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E9E1EF270C301B00DDEADC /* Assets.xcassets */; };
@@ -89,6 +91,8 @@
 		4926DDBF276F2AB5001D93A7 /* CourseHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableViewExtensions.swift; sourceTree = "<group>"; };
 		4926DDC3276F6F7F001D93A7 /* LaunchViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelProtocol.swift; sourceTree = "<group>"; };
+		49CDD322277031F4002B78BA /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		49CDD32427703C34002B78BA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		65E9E1E3270C301A00DDEADC /* Hahow-iOS-Recruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hahow-iOS-Recruit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E9E1E6270C301A00DDEADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E9E1E8270C301A00DDEADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				49112EB42768A10F00FDAF23 /* JSONDataLoader.swift */,
 				49112E9827688FAE00FDAF23 /* HelpfulFunctions.swift */,
 				4926DDA3276EF039001D93A7 /* LayoutTheme.swift */,
+				49CDD322277031F4002B78BA /* LocalizationHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				4926DDC1276F2B75001D93A7 /* UICollectionReusableViewExtensions.swift */,
 				4926DDB6276F1581001D93A7 /* UIDeviceExtensions.swift */,
 				4926DDAD276EFDF8001D93A7 /* ArrayExtensions.swift */,
+				49CDD32427703C34002B78BA /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -438,8 +444,10 @@
 				4926DDBC276F1ED3001D93A7 /* CourseCollectionViewCell.swift in Sources */,
 				4926DD9C276EEDED001D93A7 /* CourseFirstTableViewCell.swift in Sources */,
 				49112EB027689E3F00FDAF23 /* CourseModels.swift in Sources */,
+				49CDD32527703C34002B78BA /* StringExtensions.swift in Sources */,
 				49112EB52768A10F00FDAF23 /* JSONDataLoader.swift in Sources */,
 				4926DD98276E29BC001D93A7 /* CourseListViewControllerPhoneVer.swift in Sources */,
+				49CDD323277031F4002B78BA /* LocalizationHelper.swift in Sources */,
 				4926DDAC276EFBDC001D93A7 /* UIViewExtensions.swift in Sources */,
 				4926DDAE276EFDF8001D93A7 /* ArrayExtensions.swift in Sources */,
 				65E9E1E7270C301A00DDEADC /* AppDelegate.swift in Sources */,

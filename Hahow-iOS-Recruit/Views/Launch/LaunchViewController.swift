@@ -14,7 +14,7 @@ import UIKit
 class LaunchViewController: BaseViewController {
 
     private lazy var messageLabel: UILabel = {
-        $0.text = "Launching..."
+        $0.text = "launching".localizedString + "..."
         $0.textColor = .launchMessage
         return $0
     }(UILabel())

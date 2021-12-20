@@ -138,7 +138,7 @@ extension CourseListViewControllerPadVer: UICollectionViewDataSource {
                 return UICollectionReusableView()
             }
             if let title = dataSource[safe: indexPath.section]?.category {
-                headerView.titleLabel.text = title
+                headerView.titleLabel.text = title.localizedString
             }
             return headerView
         default:
