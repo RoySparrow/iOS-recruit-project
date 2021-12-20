@@ -11,6 +11,10 @@ import UIKit
 
 extension UIColor {
     
+    static let background: UIColor = .white
+    
+    static let launchMessage: UIColor = .black
+    
     static let categoryTitle: UIColor = .black
     
     static let courseTitle: UIColor = .black
