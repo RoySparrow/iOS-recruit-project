@@ -50,6 +50,7 @@ class CourseListViewControllerPhoneVer: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // 目前只有這頁有直向的需求，但如果 iPhone 和 iPad 的其他頁面都有相同的行為，會考慮移到 BaseVC 統一做設定
     /// 鎖定直向
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait

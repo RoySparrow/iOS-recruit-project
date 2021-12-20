@@ -19,6 +19,7 @@ func setRootViewController(_ viewController: UIViewController) {
 
 // MARK: - Other
 
+// 方便追蹤 print 的來源
 func print<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent
